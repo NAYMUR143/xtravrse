@@ -144,7 +144,7 @@ function CreateProject() {
   const handleClose = () => {
     setOpen(false);
   };
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     router.push("/dashboard/createproject");
   };

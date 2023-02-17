@@ -66,7 +66,7 @@ const SliderSec = styled.div`
     color: rgba(255, 255, 255, 0.6);
   }
 `;
-function index() {
+function Template() {
   const settings = {
     dots: false,
     infinite: true,
@@ -126,4 +126,4 @@ function index() {
   );
 }
 
-export default index;
+export default Template;
