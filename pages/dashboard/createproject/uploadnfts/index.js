@@ -103,6 +103,7 @@ function Uploadnfts() {
       setNftPrice={setNftPrice}
       nftMindBtn={nftMindBtn}
       setNftMindBtn={setNftMindBtn}
+      key="1"
     />,
     <Nftfeaures
       handlePrev={handlePrev}
@@ -120,6 +121,7 @@ function Uploadnfts() {
       setTokenType={setTokenType}
       mintType={mintType}
       setMintType={setMintType}
+      key="2"
     />,
   ];
 

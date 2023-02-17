@@ -140,11 +140,12 @@ function Signup({ signuphandleClose, signupOpen, signInhandleClickOpen }) {
 
   const layouts = [
     <Step1
+      key="step1"
       handleNext={handleNext}
       signuphandleClose={signuphandleClose}
       signInhandleClickOpen={signInhandleClickOpen}
     />,
-    <Step2 handlePrev={handlePrev} />,
+    <Step2 key="step2" handlePrev={handlePrev} />,
   ];
 
   return (

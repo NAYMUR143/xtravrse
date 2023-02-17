@@ -186,11 +186,11 @@ function Index() {
     setIndex(index === 0 ? layouts.length - 1 : index - 1);
   };
   const layouts = [
-    <WaitinList handleNext={handleNext} />,
-    <VerifyMail handleNext={handleNext} />,
-    <Follow handleNext={handleNext} />,
-    <ConnectWallet handleNext={handleNext} />,
-    <Thankyou />,
+    <WaitinList handleNext={handleNext} key="1" />,
+    <VerifyMail handleNext={handleNext} key="2" />,
+    <Follow handleNext={handleNext} key="3" />,
+    <ConnectWallet handleNext={handleNext} key="4" />,
+    <Thankyou key="5" />,
   ];
   return (
     <>

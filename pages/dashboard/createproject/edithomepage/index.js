@@ -104,7 +104,7 @@ const Main = styled.main`
 //   }
 // `;
 
-function page() {
+function EditHome() {
   const [index, setIndex] = useState(0);
 
   //! Edit hero
@@ -145,12 +145,13 @@ function page() {
       setBlur1={setBlur1}
       setBlur2={setBlur2}
       setBlur3={setBlur3}
+      key="1"
     />,
-    <Editsales handleNext={handleNext} />,
-    <Editfeature handleNext={handleNext} />,
-    <Editwaitlist handleNext={handleNext} />,
-    <EditFAQ handleNext={handleNext} />,
-    <Editfooter handleNext={handleNext} />,
+    <Editsales handleNext={handleNext} key="2" />,
+    <Editfeature handleNext={handleNext} key="3" />,
+    <Editwaitlist handleNext={handleNext} key="4" />,
+    <EditFAQ handleNext={handleNext} key="5" />,
+    <Editfooter handleNext={handleNext} key="6" />,
   ];
   return (
     <Main>
@@ -182,4 +183,4 @@ function page() {
   );
 }
 
-export default page;
+export default EditHome;

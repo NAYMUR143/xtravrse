@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 
@@ -157,6 +156,7 @@ function CreateProject() {
       top_right_code: "10 NFTs",
       image_src: "",
       vid_src: "",
+      key: "1",
     },
     {
       title: "NFT Magicians",
@@ -164,6 +164,7 @@ function CreateProject() {
       top_right_code: "10 NFTs",
       image_src: "",
       vid_src: "",
+      key: "2",
     },
     {
       title: "NFT Magicians",
@@ -171,6 +172,7 @@ function CreateProject() {
       top_right_code: "10 NFTs",
       image_src: "",
       vid_src: "",
+      key: "3",
     },
     {
       title: "NFT Magicians",
@@ -178,6 +180,7 @@ function CreateProject() {
       top_right_code: "10 NFTs",
       image_src: "",
       vid_src: "",
+      key: "4",
     },
     {
       title: "NFT Magicians",
@@ -185,6 +188,7 @@ function CreateProject() {
       top_right_code: "10 NFTs",
       image_src: "",
       vid_src: "",
+      key: "5",
     },
     {
       title: "NFT Magicians",
@@ -192,6 +196,7 @@ function CreateProject() {
       top_right_code: "10 NFTs",
       image_src: "",
       vid_src: "",
+      key: "6",
     },
   ];
   return (
@@ -252,9 +257,12 @@ function CreateProject() {
       </Dialog>
       <Grid container spacing={{ xs: 2, md: 0 }}>
         {six_nft_projects.map(
-          ({ title, top_left_code, top_right_code, image_src, vid_src }, i) => (
-            <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
-              <NFT_pro key={i}>
+          (
+            { title, top_left_code, top_right_code, image_src, vid_src, key },
+            index
+          ) => (
+            <Grid item xl={4} lg={4} md={4} sm={6} xs={12} key={key}>
+              <NFT_pro>
                 <div className="pro_title">{title}</div>
                 <div className="pro_codes">
                   <div>{top_left_code}</div>

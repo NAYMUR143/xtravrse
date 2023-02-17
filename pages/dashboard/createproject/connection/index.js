@@ -114,7 +114,7 @@ function Connection() {
       >
         <Stepnav />
         <Connectionsec>
-          <h1>Let's get you on the path to success</h1>
+          <h1>Lets get you on the path to success</h1>
           <Box sx={{ borderRadius: "10px" }}>
             <div className="process">
               <div className="cntpara">

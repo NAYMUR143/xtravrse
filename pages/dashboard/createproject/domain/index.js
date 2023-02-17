@@ -118,7 +118,7 @@ const FormInput = styled.div`
   }
 `;
 
-function page() {
+function Domain() {
   const [index, setIndex] = useState(0);
   const [step, setStep] = useState("Step 1");
   const handleNext = () => {
@@ -128,10 +128,10 @@ function page() {
     setIndex(index === 0 ? layouts.length - 1 : index - 1);
   };
   const layouts = [
-    <DomainSelection handleNext={handleNext} />,
-    <DomainType handleNext={handleNext} />,
-    <AllSet handleNext={handleNext} />,
-    <ManageDomains />,
+    <DomainSelection handleNext={handleNext} key="1" />,
+    <DomainType handleNext={handleNext} key="2" />,
+    <AllSet handleNext={handleNext} key="3" />,
+    <ManageDomains key="4" />,
   ];
   return (
     <>
@@ -332,7 +332,7 @@ function AllSet({ handleNext }) {
             padding: "30px 0px 0px",
           }}
         >
-          <p>Your're all set!</p>
+          <p>You are all set!</p>
         </Box>
 
         <p>
@@ -519,4 +519,4 @@ function ManageDomains() {
   );
 }
 
-export default page;
+export default Domain;

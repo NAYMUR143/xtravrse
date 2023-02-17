@@ -32,29 +32,35 @@ function Nftfeaures(props) {
   } = props;
   const router = useRouter();
   console.log(tokenType, mintType);
-  const handleSubmitAllData = async (e) => {
+  // const handleSubmitAllData = async (e) => {
+  //   e.preventDefault();
+  //   const allData = {
+  //     nftName,
+  //     addUntility,
+  //     addStory,
+  //     tags,
+  //     selectedVideoUrl,
+  //     selectedImage,
+  //   };
+
+  //   try {
+  //     const { data } = await axios({
+  //       url: "/api/uploadNftData",
+  //       method: "POST",
+  //       data: allData,
+  //     });
+
+  //     router.push("/dashboard/createproject/edithomepage");
+  //   } catch (error) {
+  //     console.log("Error", error);
+  //   }
+  // };
+
+  const handleSubmitAllData = (e) => {
     e.preventDefault();
-    const allData = {
-      nftName,
-      addUntility,
-      addStory,
-      tags,
-      selectedVideoUrl,
-      selectedImage,
-    };
-
-    try {
-      const { data } = await axios({
-        url: "/api/uploadNftData",
-        method: "POST",
-        data: allData,
-      });
-
-      router.push("/dashboard/createproject/edithomepage");
-    } catch (error) {
-      console.log("Error", error);
-    }
+    router.push("/dashboard/createproject/edithomepage");
   };
+
   return (
     <Box
       sx={{

@@ -60,8 +60,8 @@ function Stepnav() {
     <>
       <Ul>
         {navItems.map((item, index) => (
-          <li>
-            <Link key={index} href={item.href}>
+          <li key={index}>
+            <Link href={item.href}>
               <a className={router.pathname === item.href ? "active" : ""}>
                 {item.label}
               </a>
