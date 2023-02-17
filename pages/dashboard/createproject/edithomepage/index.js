@@ -147,11 +147,11 @@ function EditHome() {
       setBlur3={setBlur3}
       key="1"
     />,
-    <Editsales handleNext={handleNext} key="2" />,
-    <Editfeature handleNext={handleNext} key="3" />,
-    <Editwaitlist handleNext={handleNext} key="4" />,
-    <EditFAQ handleNext={handleNext} key="5" />,
-    <Editfooter handleNext={handleNext} key="6" />,
+    // <Editsales handleNext={handleNext} key="2" />,
+    // <Editfeature handleNext={handleNext} key="3" />,
+    // <Editwaitlist handleNext={handleNext} key="4" />,
+    // <EditFAQ handleNext={handleNext} key="5" />,
+    // <Editfooter handleNext={handleNext} key="6" />,
   ];
   return (
     <Main>
