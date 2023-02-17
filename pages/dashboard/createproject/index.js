@@ -100,7 +100,7 @@ function index() {
                     <h1>Select Template</h1>
 
                     <Link href="/dashboard/createproject/uploadnfts">
-                      Next step
+                      <a href="">Next step</a>
                     </Link>
                   </div>
                 </div>
